@@ -73,5 +73,19 @@ When Did You Get Hot
 Iris
 </li>
 
+<p id="tocando"> Nenhuma música tocando </p>
+
+<script>
+  const player = document.getElementById("player");
+  const texto = document.getElementById("tocando");
+
+  function tocarMusica(src, nome) {
+    player.src = src;
+    player.play();
+    texto.innerText = "🎧 Tocando: " + nome;
+  }
+</script>
+
+
 </body>
 </html>
