@@ -1,1 +1,91 @@
-# musicas
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>músicas</title>
+</head>
+<body>
+  <audio id="player"></audio>
+<h2> Músicas </h2>
+  <ul class="musicas">
+
+  <li onclick="tocarMusica("musicas/A-Drop-In-The-Ocean.mp3", "A Drop In The Ocean")">
+  A Drop In The Ocean
+</li>
+
+<li onclick="tocarMusica("musicas/American-girls.mp3", "American Girls")">
+American Girls
+</li>
+
+<li onclick="tocarMusica("musicas/Aperture.mp3", "Aperture")">
+Aperture
+</li>
+
+<li onclick="tocarMusica("musicas/Brain-&-Heart.mp3", "Brain & Hearts")">
+Brain & Heart
+</li>
+
+<li onclick="tocarMusica("musica/Espresso.mp3", "Espresso")">
+Espresso
+</li>
+
+<li onclick="tocarMúsica("musica/FRIENDS.mp3", "FRIENDS")>
+FRIENDS
+</li>
+
+<li onclick="tocarMusica("musica/Feel-So-Close.mp3", "Feel So Close")">
+  Feel So Close
+</li>
+
+<li onclick="tocarMusica("musica/Hold-On.mp3", "Hold On")">
+Hold On
+</li>
+
+<li onclick="tocarMusica("musica/Manchild.mp3", "Manchild")">
+Manchild
+</li>
+
+<li onclick="tocarMusica("musica/Seven.mp3", "Seven")">
+Seven
+</li>
+
+<li onclick="tocarMusica("musica/Style.mp3", "Style")">
+Style
+</li>
+
+<li onclick="tocarMusica("musica/Late-Night-Talking.mp3", "Late Night Talking")">
+Late Night Talking
+</li>
+
+<li onclick="tocarMusica("musica/Internet-Girl.mp3", "Internet Girl")">
+Internet Girl
+</li>
+
+<li onclick="tocarMusica("musica/Opalite.mp3", "Opalite")">
+Opalite
+</li>
+
+<li onclick="tocarMusica("musica/When-Did-You-Get-Hot.mp3", "When Did You Get Hot")">
+When Did You Get Hot
+</li>
+
+<li onclick="tocarMusica("musica/Iris.mp3", "Iris")">
+Iris
+</li>
+
+<p id="tocando"> Nenhuma música tocando </p>
+
+<script>
+  const player = document.getElementById("player");
+  const texto = document.getElementById("tocando");
+
+  function tocarMusica(src, nome) {
+    player.src = src;
+    player.play();
+    texto.innerText = "🎧 Tocando: " + nome;
+  }
+</script>
+
+
+</body>
+</html>
