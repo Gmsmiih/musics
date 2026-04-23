@@ -1,0 +1,17 @@
+.musicas {
+  list-style: none;
+  padding: 0;
+}
+
+.musicas li {
+  background: #111;
+  margin: 10px 0;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  border-left: 3px solid #8b0000;
+}
+
+.musicas li:hover {
+  background: #1a1a1a;
+}
